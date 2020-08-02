@@ -68,10 +68,69 @@ class Hard:
 
 # EJECUTION
 # Instanciamos
-harcore = Hard()
+#harcore = Hard()
 # Base (Vertice de A a B)
-b = harcore.base(1,1,4,2)
+#b = harcore.base(1,1,4,2)
 # Altura (Vertice de B a C)
-a = harcore.altura(4,2,6,-4)
+#a = harcore.altura(4,2,6,-4)
 # Area
-harcore.area(b, a)
+#harcore.area(b, a)
+#intro = Intro()
+#intro.greeting()
+#intro.producto()
+
+
+# EXERCISE 1.3
+
+def iterador():
+    # Multiplicacion de iterador por iterador
+    for i in range(5): 
+        print(i * i)
+
+def raiz():
+    # Raiz cuadrada segun iterador
+    for i in range(2, 6): 
+        print(i, 2 **i)
+
+
+# EXERCISE 1.4
+
+def factorial(num):
+    if num > 0:
+        num = num * factorial(num - 1)
+    else:
+        num = 1
+    return num
+
+
+# EXERCISE 1.5
+
+def mate():
+    num_1 = int(input("1. Ingrese un numero: "))
+    num_2 = int(input("2. Ingrese un numero: "))
+
+    print(f"""
+    La suma de {num_1} + {num_2} es {num_1 + num_2}
+    La resta de {num_1} - {num_2} es {num_1 -num_2}
+    La multiplicacion de {num_1} * {num_2} es {num_1 * num_2}
+    La division de {num_1} / {num_2} es {num_1 / num_2}
+    """)
+
+# Tabla de multiplicar
+def multi():
+    num = int(input("Ingrese un para saber su tabla de multiplicar: "))
+
+    for i in range(1, 11):
+        print(f"{num} * {i} = {num * i}")
+
+#multi = multi()
+
+
+# EXERCISE 1.6
+def quilombo():
+    name = input("Whats is your name? ")
+    
+    for i in range (1001):
+        print(name, end=" ")
+
+quilomben = quilombo()
