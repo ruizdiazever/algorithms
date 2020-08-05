@@ -12,13 +12,29 @@ def credit():
 
 
 
-# EXCERCISE 2.2
+# EXERCISE 2.2
 
-def algorithm():
-    num = float(input("Introduzca la tempera en Fahrenheit: "))
-    celsius = (num - 32) * 5/9
+# Toma una temperatura en Fahrenheit y retorna en Celsius
+class Temperature:
+    def __init__(self):
+        print("Welcome to the converter of temperature.")
 
-    print(f"La temperatura de {num} Fahrenheit es {celsius} Celsius.")
+    def fahrenheit(self, num):
+        self.num = num
 
-test = algorithm()
+        celsius = (num - 32) * 5/9
+        return celsius
 
+# INSTANCE
+test = Temperature()
+print(f"La temperatura introducida en Fahrenheit es {test.fahrenheit(5)} Celsius.")
+
+
+
+
+# EXERCISE 2.3
+
+# Devuelve valores en Celsius de 0 a 120 Fahrenheit con una franja de 10 grados F°.
+for i in range (0, 120, 10):
+    print(f"{i} Fahrenheit = {test.fahrenheit(i)} Celsius.")
+    
