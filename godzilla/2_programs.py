@@ -1,7 +1,7 @@
 # EXERCISE 2.1
 
 def credit():
-    coin = float(input("Ingrese la cantidad de euros: "))
+    coin = float(input("Ingrese la cantidad del prestamo en euros: "))
     interest = float(input("Introduzca la tasa de interes: "))
     years = int(input("Ingrese la cantidad de años: "))
 
@@ -34,22 +34,42 @@ class Temperature:
         return fahrenheit
 
 
-# Instance
-test = Temperature()
-
-# Fahrenheit to Celsius
-celsius = test.fahrenheit_to_celsius(24)
-# Celsius to Fahrenheit
-fahrenheit = test.celsius_to_fahrenheit(celsius)
-# Result
-print(f"{celsius} °C son {fahrenheit} °F")
-
-
 
 
 # EXERCISE 2.3
 
 # Devuelve valores en Celsius de 0 a 120 Fahrenheit con una franja de 10 grados F°.
-for i in range (0, 120, 10):
-    print(f"{i} Fahrenheit = {test.fahrenheit_to_celsius(i)} Celsius.")
-    
+def temperature_table_10():
+    for i in range (0, 120, 10):
+        print(f"{i} Fahrenheit = {test.fahrenheit_to_celsius(i)} Celsius.")
+
+
+
+
+# EXERCISE 2.4
+
+# Imprime todos los numeros pares entre 2 numeros introducidos.
+def pairs():
+    num_1 = int(input("Please input one number: "))
+    num_2 = int(input("Please input other number: "))
+
+    if num_1 < num_2:
+        for i in range(num_1, num_2 + 1, 2):
+            if i % 2 == 0:
+                print(i)
+            else:
+                print(i+1)
+    else:
+        for i in range(num_1, num_2 - 2, -2):
+            if i % 2 == 0:
+                print(i)
+            else:
+                print(i+1)
+
+# Instance
+pares = pairs()
+
+
+
+
+# EXERCISE 2.5
