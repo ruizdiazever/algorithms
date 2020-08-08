@@ -92,12 +92,12 @@ def count_elapsed_time(f):
     return wrapper
 
 
-# Algoritmo propio
+# This algorithm is mineeeee
 @count_elapsed_time
 def triangule_numbers():
     """
     Induccion matematica, suma de los números naturales desde 1 hasta num
-    Algoritmo original propio
+    Algoritmo original propio.
     """
     num = int(input("Please input one integer number: "))
     lista = []
@@ -109,12 +109,16 @@ def triangule_numbers():
 test = triangule_numbers()
 
 
-# Algoritmo basado en ecuacion
+# Internet algorithm based on the equation
 @count_elapsed_time
 def triangule_numbers_2():
+    """
+    Induccion matematica, suma de los números naturales desde 1 hasta num
+    Algoritmo basado en ecuacion.
+    """
     num = int(input("Please input one integer number: "))
 
     for i in range(1, num + 1, 1):
         print(f"{i} - {int(i * (i + 1) / 2)}")
 # Instance
-guy = triangule_numbers_2()
+fallguys = triangule_numbers_2()
