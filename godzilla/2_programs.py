@@ -100,6 +100,7 @@ def triangule_numbers():
     Algoritmo original propio.
     """
     num = int(input("Please input one integer number: "))
+    #num = 5
     lista = []
 
     for i in range(1, num + 1, 1):
@@ -117,6 +118,7 @@ def triangule_numbers_2():
     Algoritmo basado en ecuacion.
     """
     num = int(input("Please input one integer number: "))
+    #num = 5
 
     for i in range(1, num + 1, 1):
         print(f"{i} - {int(i * (i + 1) / 2)}")
