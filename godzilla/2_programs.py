@@ -70,6 +70,8 @@ def pairs():
 
 
 # EXERCISE 2.5
+
+
 from time import time
 def count_elapsed_time(f):
     """
@@ -90,31 +92,29 @@ def count_elapsed_time(f):
     return wrapper
 
 
-
-# Induccion matematica, suma de los números naturales desde 1 hasta num
-# Algoritmo original propio
+# Algoritmo propio
 @count_elapsed_time
 def triangule_numbers():
-    #num = int(input("Please input one integer number: "))
-    num = 5
+    """
+    Induccion matematica, suma de los números naturales desde 1 hasta num
+    Algoritmo original propio
+    """
+    num = int(input("Please input one integer number: "))
     lista = []
 
     for i in range(1, num + 1, 1):
         lista.append(i)
         print(f"{i} - {sum(lista)}")
-
 # Instance
 test = triangule_numbers()
+
 
 # Algoritmo basado en ecuacion
 @count_elapsed_time
 def triangule_numbers_2():
-    #num = int(input("Please input one integer number: "))
-    num = 5
+    num = int(input("Please input one integer number: "))
 
     for i in range(1, num + 1, 1):
         print(f"{i} - {int(i * (i + 1) / 2)}")
-
-
 # Instance
 guy = triangule_numbers_2()
