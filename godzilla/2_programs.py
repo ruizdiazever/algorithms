@@ -14,8 +14,9 @@ def credit():
 
 # EXERCISE 2.2
 
-# Toma una temperatura en Fahrenheit y retorna en Celsius y viceversa.
 class Temperature:
+    """ Toma una temperatura en Fahrenheit y retorna en Celsius y viceversa. """
+
     def __init__(self):
         print("Welcome to the converter of temperature.")
 
@@ -38,18 +39,19 @@ class Temperature:
 
 # EXERCISE 2.3
 
-# Devuelve valores en Celsius de 0 a 120 Fahrenheit con una franja de 10 grados F°.
 def temperature_table_10():
+    """ Devuelve valores en Celsius de 0 a 120 Fahrenheit con una franja de 10 grados F°. """
     for i in range (0, 120, 10):
         print(f"{i} Fahrenheit = {test.fahrenheit_to_celsius(i)} Celsius.")
 
 
 
 
+
 # EXERCISE 2.4
 
-# Imprime todos los numeros pares entre 2 numeros introducidos.
 def pairs():
+    """ Imprime todos los numeros pares entre 2 numeros introducidos. """
     num_1 = int(input("Please input one number: "))
     num_2 = int(input("Please input other number: "))
 
@@ -69,8 +71,8 @@ def pairs():
 
 
 
-# EXERCISE 2.5
 
+# EXERCISE 2.5
 
 from time import time
 def count_elapsed_time(f):
@@ -119,6 +121,9 @@ def triangule_numbers_2():
 
 
 
+
+
+
 # EXERCISE 2.6
 
 def multi_list(lista):
@@ -129,9 +134,7 @@ def multi_list(lista):
     return multi
 
 def factorial():
-    """
-    Cantidad pedido al usuario, imprime el factorial de cada numero hasta el ingresado.
-    """
+    """ Cantidad pedido al usuario, imprime el factorial de cada numero hasta el ingresado. """
     num = int(input("Please input one integer number: "))
     lista = []
     
@@ -141,41 +144,31 @@ def factorial():
 
 
 
+
+
+
 # EXERCISE 2.7
 
-
 def domino():
-    """
-    Este algoritmo imprime las fichas del domino, es una negrada, soy conciente de ello.
-    """
+    """ Este algoritmo imprime las fichas del domino, es una negrada, soy conciente de ello. """
 
     aux = 6
     lista = []
     
     for i in range(1, 29):
-
         if (i >= 1  and i <= 7):
             print(f"Ficha ({i:02d}) ->     {0} | {i - 1}")
             lista.append({0} | {i - 1})
-            
         elif (i >= 7  and i <= 13):
             print(f"Ficha ({i:02d}) ->     {1} | {(i - 1) - aux}")
             lista.append({1} | {(i - 1) - aux})
-
         elif (i >= 13  and i <= 18):
             print(f"Ficha ({i:02d}) ->     {2} | {(i) - (aux*2)}")
-
         elif (i >= 18  and i <= 22):
             print(f"Ficha ({i:02d}) ->     {3} | {(i + 2) - (aux*3)}")
-
         elif (i >= 22  and i <= 25):
             print(f"Ficha ({i:02d}) ->     {4} | {(i + 5) - (aux*4)}")
-
         elif (i >= 25  and i <= 27):
             print(f"Ficha ({i:02d}) ->     {5} | {(i + 9) - (aux*5)}")
-
         elif (i >= 27  and i <= 28):
             print(f"Ficha ({i:02d}) ->     {6} | {(i + 14) - (aux*6)}")
-
-
-test = domino()

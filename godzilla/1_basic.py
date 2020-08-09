@@ -1,7 +1,7 @@
 import math
 
+# EXERCISE 1.1
 
-# Ejercicio 1.1
 class Intro:
     def greeting(self):
         name = input(f"Whats is your name? ")
@@ -19,9 +19,13 @@ class Intro:
             print(f"3. Result: {int(num_1 * num_2)}") 
 
 
-# Exercise 1.2
+
+
+
+# EXERCISE 1.2
+
 class Geometria:
-    # Exercises A and B
+    # A and B
     def rectangulo(self, base, altura):
         self.base = base
         self.altura = altura
@@ -29,27 +33,27 @@ class Geometria:
         print(f"a) Perimetro: {2 * (base + altura)}")
         print(f"b) Area: {base * altura}")
 
-    # Exercises D and E
+    # D and E
     def circulo(self, radio):
         self.radio = radio
         print(f"Circulo de radio {radio}")
         print(f"d) Perimetro: {2 * math.pi * radio}")
         print(f"e) Area: {math.pi * (radio ** 2)}")
 
-    # Exercise F
+    # F
     def esfera(self, radio):
         self.radio = radio
         print(f"Esfera de radio {radio}")
         print(f"f) Volumen: {(4 * math.pi * (radio **3)) / 3}")       
 
-    # Exercise G
+    # G
     def triangulo_rectangulo(self, cateto_1, cateto_2):
         hipotenusa = math.sqrt((cateto_1 **2) + (cateto_2**2))
         print(f"Triangulo rectangulo de catetos {cateto_1} y {cateto_2}")
         print(f"g) Hipotenusa= {hipotenusa}")
 
 
-# Exercise C
+# C
 class Hard:
     def base(self, x1, y1, x2, y2):
         base = math.sqrt(((x2-x1)**2) + ((y2-y1)**2))
@@ -66,18 +70,7 @@ class Hard:
         print("El area es: ", area)
 
 
-# EJECUTION
-# Instanciamos
-#harcore = Hard()
-# Base (Vertice de A a B)
-#b = harcore.base(1,1,4,2)
-# Altura (Vertice de B a C)
-#a = harcore.altura(4,2,6,-4)
-# Area
-#harcore.area(b, a)
-#intro = Intro()
-#intro.greeting()
-#intro.producto()
+
 
 
 # EXERCISE 1.3
@@ -93,6 +86,9 @@ def raiz():
         print(i, 2 **i)
 
 
+
+
+
 # EXERCISE 1.4
 
 def factorial(num):
@@ -101,6 +97,9 @@ def factorial(num):
     else:
         num = 1
     return num
+
+
+
 
 
 # EXERCISE 1.5
@@ -123,14 +122,14 @@ def multi():
     for i in range(1, 11):
         print(f"{num} * {i} = {num * i}")
 
-#multi = multi()
+
+
 
 
 # EXERCISE 1.6
+
 def quilombo():
     name = input("Whats is your name? ")
     
     for i in range (1001):
         print(name, end=" ")
-
-quilomben = quilombo()
