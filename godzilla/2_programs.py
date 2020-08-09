@@ -91,7 +91,6 @@ def count_elapsed_time(f):
     
     return wrapper
 
-
 # This algorithm is mineeeee
 @count_elapsed_time
 def triangule_numbers():
@@ -100,15 +99,11 @@ def triangule_numbers():
     Algoritmo original propio.
     """
     num = int(input("Please input one integer number: "))
-    #num = 5
     lista = []
 
     for i in range(1, num + 1, 1):
         lista.append(i)
         print(f"{i} - {sum(lista)}")
-# Instance
-test = triangule_numbers()
-
 
 # Internet algorithm based on the equation
 @count_elapsed_time
@@ -118,9 +113,69 @@ def triangule_numbers_2():
     Algoritmo basado en ecuacion.
     """
     num = int(input("Please input one integer number: "))
-    #num = 5
 
     for i in range(1, num + 1, 1):
         print(f"{i} - {int(i * (i + 1) / 2)}")
-# Instance
-fallguys = triangule_numbers_2()
+
+
+
+# EXERCISE 2.6
+
+def multi_list(lista):
+    multi= 1
+
+    for i in range(0, len(lista)):
+        multi = multi * lista[i]
+    return multi
+
+def factorial():
+    """
+    Cantidad pedido al usuario, imprime el factorial de cada numero hasta el ingresado.
+    """
+    num = int(input("Please input one integer number: "))
+    lista = []
+    
+    for i in range(1, num + 1, 1):
+        lista.append(i)
+        print(f"{i} ---> {multi(lista)}")
+
+
+
+# EXERCISE 2.7
+
+
+def domino():
+    """
+    Este algoritmo imprime las fichas del domino, es una negrada, soy conciente de ello.
+    """
+
+    aux = 6
+    lista = []
+    
+    for i in range(1, 29):
+
+        if (i >= 1  and i <= 7):
+            print(f"Ficha ({i:02d}) ->     {0} | {i - 1}")
+            lista.append({0} | {i - 1})
+            
+        elif (i >= 7  and i <= 13):
+            print(f"Ficha ({i:02d}) ->     {1} | {(i - 1) - aux}")
+            lista.append({1} | {(i - 1) - aux})
+
+        elif (i >= 13  and i <= 18):
+            print(f"Ficha ({i:02d}) ->     {2} | {(i) - (aux*2)}")
+
+        elif (i >= 18  and i <= 22):
+            print(f"Ficha ({i:02d}) ->     {3} | {(i + 2) - (aux*3)}")
+
+        elif (i >= 22  and i <= 25):
+            print(f"Ficha ({i:02d}) ->     {4} | {(i + 5) - (aux*4)}")
+
+        elif (i >= 25  and i <= 27):
+            print(f"Ficha ({i:02d}) ->     {5} | {(i + 9) - (aux*5)}")
+
+        elif (i >= 27  and i <= 28):
+            print(f"Ficha ({i:02d}) ->     {6} | {(i + 14) - (aux*6)}")
+
+
+test = domino()
