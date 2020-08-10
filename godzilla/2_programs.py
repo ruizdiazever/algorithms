@@ -172,3 +172,11 @@ def domino():
             print(f"Ficha ({i:02d}) ->     {5} | {(i + 9) - (aux*5)}")
         elif (i >= 27  and i <= 28):
             print(f"Ficha ({i:02d}) ->     {6} | {(i + 14) - (aux*6)}")
+
+# Segunda version del domino
+def domino_super():
+    for i in range(1, 7):
+        for j in range(i, 7):
+            print(f"{i}:{j}")
+    
+test = domino_super()
