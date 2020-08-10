@@ -137,13 +137,12 @@ def factorial():
     """ Cantidad pedido al usuario, imprime el factorial de cada numero hasta el ingresado. """
     num = int(input("Please input one integer number: "))
     lista = []
-    
+
     for i in range(1, num + 1, 1):
         lista.append(i)
-        print(f"{i} ---> {multi(lista)}")
+        multi = multi_list(lista)
 
-
-
+    print(f"{i} ---> {multi}")
 
 
 
@@ -175,8 +174,11 @@ def domino():
 
 # Segunda version del domino
 def domino_super():
-    for i in range(1, 7):
-        for j in range(i, 7):
-            print(f"{i}:{j}")
-    
-test = domino_super()
+    for i in range(7):
+        for x in range(i, 7):
+            print(f"{i}:{x}")
+
+
+
+
+# EXERCISE 2.8
