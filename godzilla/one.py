@@ -8,12 +8,12 @@ import math
 
 class Intro:    
     def greeting(self):
-        """ This program asks your name and greets you """
+        """ This method asks your name and greets you """
         name = input(f"Whats is your name? ")
         print(f"Welcome {name} to the Matrix.")
 
     def multiplication(self):
-        """ This function can multiply two numbers """
+        """ This method can multiply two numbers """
         print(f"Please enter 2 numbers.")
 
         try:
@@ -30,7 +30,7 @@ class Intro:
 class Geometry:
     # Point A and B
     def rectangle(self, base, altura):
-        """ Calculates the perimeter and area of a rectangle given its base and height """
+        """ This method calculates the perimeter and area of a rectangle given its base and height """
         self.base = base
         self.altura = altura
         print(f"Rectangulo con base {base} y altura {altura}")
@@ -39,7 +39,7 @@ class Geometry:
 
     # Point D and E
     def circle(self, radio):
-        """ Calculates the perimeter and area of a circle given its radius """
+        """ This method calculates the perimeter and area of a circle given its radius """
         self.radio = radio
         print(f"Circulo de radio {radio}")
         print(f"d) Perimetro: {2 * math.pi * radio}")
