@@ -4,16 +4,16 @@ import math
 
 
 
-# EXERCISE 1.1
+#  EXERCISE 1.1
 
-class Intro:
-    """ This program asks your name and greets you """
+class Intro:    
     def greeting(self):
+        """ This program asks your name and greets you """
         name = input(f"Whats is your name? ")
         print(f"Welcome {name} to the Matrix.")
 
-    """ This function can multiply two numbers """
     def multiplication(self):
+        """ This function can multiply two numbers """
         print(f"Please enter 2 numbers.")
 
         try:
@@ -25,10 +25,7 @@ class Intro:
             print(f"3. Result: {int(a * b)}") 
 
 
-
-
-
-# EXERCISE 1.2
+#  EXERCISE 1.2
 
 class Geometry:
     # Point A and B
@@ -63,7 +60,7 @@ class Geometry:
         print(f"g) Hipotenusa= {hipotenusa}")
 
 
-# C
+#  C
 class Hard:
     """ Calculates the area of a rectangle (aligned with the x and y axes) given its x1, x2, y1, y2 coordinates. """
     
@@ -85,7 +82,7 @@ class Hard:
 
 
 
-# EXERCISE 1.3
+#  EXERCISE 1.3
 
 def iterador():
     """ Multiplicacion de iterador por iterador """
@@ -101,7 +98,7 @@ def raiz():
 
 
 
-# EXERCISE 1.4
+#  EXERCISE 1.4
 
 def factorial(num):
     if num > 0:
@@ -114,7 +111,7 @@ def factorial(num):
 
 
 
-# EXERCISE 1.5
+#  EXERCISE 1.5
 
 def mate():
     a = int(input("1. Ingrese un numero: "))
@@ -127,7 +124,7 @@ def mate():
     La division de {a} / {b} es {a / b}
     """)
 
-# Tabla de multiplicar
+#  Tabla de multiplicar
 def multi():
     num = int(input("Ingrese un para saber su tabla de multiplicar: "))
 
@@ -138,7 +135,7 @@ def multi():
 
 
 
-# EXERCISE 1.6
+#  EXERCISE 1.6
 
 def quilombo():
     name = input("Whats is your name? ")
