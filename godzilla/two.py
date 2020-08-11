@@ -140,9 +140,11 @@ def factorial():
 
     for i in range(1, num + 1, 1):
         lista.append(i)
-        multi = multi_list(lista)
-
+        
+    multi = multi_list(lista)
     print(f"{i} ---> {multi}")
+
+test = factorial()
 
 
 

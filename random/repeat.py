@@ -13,5 +13,3 @@ def test(num):
 
     print("LISTA: ", lista)
     print("MAS POPULAR: ", repetido,"tiene", popular, "repeticiones.")
-
-test(5)
