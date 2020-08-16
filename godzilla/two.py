@@ -144,7 +144,9 @@ def factorial():
     multi = multi_list(lista)
     print(f"{i} ---> {multi}")
 
-test = factorial()
+
+
+
 
 
 
@@ -174,8 +176,8 @@ def domino():
         elif (i >= 27  and i <= 28):
             print(f"Ficha ({i:02d}) ->     {6} | {(i + 14) - (aux*6)}")
 
-# Segunda version del domino
-def domino_super():
+# Second version of this exercise
+def dominoSuper():
     for i in range(7):
         for x in range(i, 7):
             print(f"{i}:{x}")
@@ -184,3 +186,9 @@ def domino_super():
 
 
 # EXERCISE 2.8
+def programGame():
+    num = int(input("Input the limit number of game: "))
+
+    for i in range(num + 1):
+        for x in range(i, num + 1):
+            print(f"{i}:{x}")
