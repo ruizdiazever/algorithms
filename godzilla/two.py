@@ -182,7 +182,7 @@ def dominoSuper():
         for x in range(i, 7):
             print(f"{i}:{x}")
 
-
+test = dominoSuper()
 
 
 # EXERCISE 2.8
