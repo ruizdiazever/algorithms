@@ -28,6 +28,8 @@ In this repository you will find problems and their solutions, I made it origina
 
 ### MODULE 4, decitions
     4.1 -> primenumber.py
+    4.2 -> abs.py
+    4.3 -> identitymatrix.py
 
 
 
