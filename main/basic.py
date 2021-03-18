@@ -1,4 +1,4 @@
-#  EXERCISE 1.5
+#  EXERCISE 1.5, basic math and table product.
 
 def mate():
     a = int(input("1. Ingrese un numero: "))

@@ -8,7 +8,7 @@ In this repository you will find problems and their solutions, I made it origina
     1.3 -> iteration.py
     1.4 -> factorial.py
     1.5 -> basic.py
-    1.6 -> end.py
+    1.6 -> names.py
 
 ### MODULE 2, simple programs
     2.1 -> tax.py

@@ -1,4 +1,4 @@
-# EXERCISE 2.6
+# EXERCISE 2.6, factorial of a list of numbers.
 
 def multi_list(lista):
     multi= 1

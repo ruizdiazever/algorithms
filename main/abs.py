@@ -1,4 +1,4 @@
-# EXERCISE 4.2
+# EXERCISE 4.2, absolute number.
 
 def abspersonal():
     num = int(input('Please, input a integer number: '))

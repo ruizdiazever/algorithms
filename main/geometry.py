@@ -4,7 +4,7 @@ import math
 class Geometry:
     # A and B
     def rectangle(self, base, altura):
-        """ This method calculates the perimeter and area of a rectangle given its base and height """
+        """ This method calculates the perimeter and area of a rectangle given its base and height. """
         self.base = base
         self.altura = altura
         print(f"Rectangulo con base {base} y altura {altura}")
@@ -13,7 +13,7 @@ class Geometry:
 
     # D and E
     def circle(self, radio):
-        """ This method calculates the perimeter and area of a circle given its radius """
+        """ This method calculates the perimeter and area of a circle given its radius. """
         self.radio = radio
         print(f"Circulo de radio {radio}")
         print(f"d) Perimetro: {2 * math.pi * radio}")
@@ -21,14 +21,14 @@ class Geometry:
 
     # F
     def sphere(self, radio):
-        """ Calculates the volume of a sphere given its radius """
+        """ Calculates the volume of a sphere given its radius. """
         self.radio = radio
         print(f"Esfera de radio {radio}")
         print(f"f) Volumen: {(4 * math.pi * (radio **3)) / 3}")       
 
     # G
     def triangle_rectangle(self, cateto_1, cateto_2):
-        """ Calculates the hypotenuse of a right triangle given its legs """
+        """ Calculates the hypotenuse of a right triangle given its legs. """
         hipotenusa = math.sqrt((cateto_1 **2) + (cateto_2**2))
         print(f"Triangulo rectangulo de catetos {cateto_1} y {cateto_2}")
         print(f"g) Hipotenusa= {hipotenusa}")

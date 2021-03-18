@@ -1,4 +1,4 @@
-#  EXERCISE 1.4
+#  EXERCISE 1.4, factorial of a number.
 
 def factorial(num):
     if num > 0:
